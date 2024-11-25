@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import logo from "./logo.png";
-import { css } from "@emotion/react";
+import { css, ThemeProvider } from "@emotion/react";
 import {
   CardWrapper,
   ImageWrapper,
@@ -11,6 +11,8 @@ import {
   PrimaryButton,
   SecondaryButton,
 } from "./styles";
+
+import { theme } from "./styles";
 // import `css`and `ThemeProvider` from "@emotion/react" package
 // import styled components, theming and animation from "./styles.js" file
 
@@ -41,7 +43,8 @@ const hotels = [
 // Apply styling to code within the `App` component's `return` statement using styled components, theming, animation and the `css` prop
 function App() {
   return (
-    <main
+    <ThemeProvider theme={theme}>
+      <main
       css={{
         color: "#03045e",
         background: "#caf0f8",
@@ -93,6 +96,7 @@ function App() {
         })}
       </div>
     </main>
+  </ThemeProvider> 
   );
 }
 
