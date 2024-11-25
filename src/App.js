@@ -8,7 +8,8 @@ import {
   TitleWrapper,
   DescriptionWrapper,
   ActionsWrapper,
-  Button,
+  PrimaryButton,
+  SecondaryButton,
 } from "./styles";
 // import `css`and `ThemeProvider` from "@emotion/react" package
 // import styled components, theming and animation from "./styles.js" file
@@ -84,8 +85,8 @@ function App() {
                 <DescriptionWrapper>{hotel.description}</DescriptionWrapper>
               </TextWrapper>
               <ActionsWrapper>
-                <Button>Details</Button>
-                <Button>Book</Button>
+                <PrimaryButton>Details</PrimaryButton>
+                <SecondaryButton>Book</SecondaryButton>
               </ActionsWrapper>
             </CardWrapper>
           );
