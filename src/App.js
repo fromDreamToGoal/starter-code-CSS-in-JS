@@ -12,7 +12,7 @@ import {
   SecondaryButton,
 } from "./styles";
 
-import { theme } from "./styles";
+import { theme, LogoSpin } from "./styles";
 // import `css`and `ThemeProvider` from "@emotion/react" package
 // import styled components, theming and animation from "./styles.js" file
 
@@ -61,6 +61,7 @@ function App() {
           margin-left: 15px;
           height: 100px;
           width: 100px;
+          animation: ${LogoSpin} 5s linear infinite;
         `}
       />
       <div
